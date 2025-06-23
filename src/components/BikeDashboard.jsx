@@ -41,7 +41,7 @@ const joystickControls = {
    "null": "Neutral"
 };
 
-const tabs = ["Driver Behaviour", "Vehicle Details"];
+const tabs = ["Driver Behaviour", "Vehicle Details", "Vehicle Crash"];
 
 function BikeDashboard() {
   const [activeTab, setActiveTab] = useState("Driver Behaviour");
