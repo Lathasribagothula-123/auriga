@@ -3,9 +3,9 @@ import AWS from 'aws-sdk';
  
 export async function aurigaclient() {
   // Configure Cognito credentials
-  AWS.config.region = 'us-east-1'; // Your region
+  AWS.config.region = 'ca-central-1'; // Your region
   AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: 'us-east-1:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+    IdentityPoolId: 'ca-central-1:8c88db8c-dd21-453d-bafe-77502c44bf1d',
   });
  
   await AWS.config.credentials.getPromise();
@@ -15,8 +15,8 @@ export async function aurigaclient() {
     accessKey: credentials.accessKeyId,
     secretKey: credentials.secretAccessKey,
     sessionToken: credentials.sessionToken,
-    endpoint: 'abcdefgh123456-ats.iot.us-east-1.amazonaws.com',
-    region: 'us-east-1',
+    endpoint:'ai7ylehkeodwh-ats.iot.ca-central-1.amazonaws.com',
+    region: 'ca-central-1',
   });
  
   const client = mqtt.connect(requestUrl);
